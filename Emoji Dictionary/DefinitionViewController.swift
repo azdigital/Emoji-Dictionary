@@ -12,12 +12,34 @@ class DefinitionViewController: UIViewController {
 
     var emoji = "NO EMOJI"
     @IBOutlet var emojiLabel: UILabel!
+    @IBOutlet var definitionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print(emoji)
         emojiLabel.text = emoji
+        
+        
+        if emoji == "🎹" {
+            definitionLabel.text = "Piano"
+        } else if emoji == "🚌" {
+            definitionLabel.text = "Bus"
+        } else if emoji == "🕹" {
+            definitionLabel.text = "Game"
+        } else if emoji == "🍶" {
+            definitionLabel.text = "Milk"
+        } else if emoji == "⚽️" {
+            definitionLabel.text = "Ball"
+        } else if emoji == "🚠" {
+            definitionLabel.text = "Funicular"
+        } else {
+            definitionLabel.text = "Nice picture"
+        }
+        
+        
+        
+        
         
     }
 
