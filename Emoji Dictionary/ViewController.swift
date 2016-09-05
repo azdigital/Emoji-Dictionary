@@ -19,8 +19,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
-        emojiTableView.dataSource = self
-        emojiTableView.delegate = self
+         emojiTableView.dataSource = self
+         emojiTableView.delegate = self
         
     }
     
@@ -32,6 +32,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = UITableViewCell()
         cell.textLabel?.text = emojis[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "moveSegue", sender: "🏁")
     }
 
     override func didReceiveMemoryWarning() {
