@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="972" y="38.23088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="fbG-RX-Hlw">
             <objects>
-                <viewController id="mP8-Rf-wbA" sceneMemberID="viewController">
+                <viewController id="mP8-Rf-wbA" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7rA-tS-4Ro"/>
                         <viewControllerLayoutGuide type="bottom" id="7et-Gt-5Ya"/>
@@ -71,6 +71,9 @@
                             <constraint firstItem="LM2-Mx-pTf" firstAttribute="centerX" secondItem="dkW-Cp-lpu" secondAttribute="centerX" id="ya3-d4-0Gn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="LM2-Mx-pTf" id="kJq-Gk-Phk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZnU-jO-Efs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
